@@ -15,4 +15,5 @@ void main(){
 	int n = 5;
 	char arr[] = "madam";
 	bool ret = isPalindrome(arr,0,n-1);
+	printf("Ans : %d",ret);
 }
