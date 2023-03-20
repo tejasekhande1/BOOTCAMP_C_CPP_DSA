@@ -4,20 +4,21 @@
 #include <stdio.h>
 
 void cntSubArray(int arr[],int n){
-	for(int i=0 ; i<n ; i++){
-		
+	for(int i=0 ; i<n ; i++){		
 		int var = i;
-		int j=i;
-	
-		for( ; j<=var ; j++){
+		for(int j=i ; j<=var ; j++){
+
 			if(var == n) break;		
+
 			printf(" %d ",arr[j]);		
+		
 			if(var == j){
 				printf("\n");
 				var = var+1;
-				j=i;
+				j=i-1;
 			}
 		}
+
 		printf("\n");
 	}
 }

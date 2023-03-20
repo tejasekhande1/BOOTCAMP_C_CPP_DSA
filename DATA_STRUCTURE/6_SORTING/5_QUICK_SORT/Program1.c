@@ -29,7 +29,7 @@ void quickSort(int arr[],int start,int end){
 }
 
 void main(){
-	int arr[] = {8,9,4,1,2,3,11,7};
+	int arr[] = {2,0,2,1,1,0};
 	int n = sizeof(arr)/sizeof(int);
 	int start = 0;
 	int end = n-1;
